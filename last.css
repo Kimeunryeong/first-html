@@ -131,7 +131,7 @@ header img {
 .intro img {
   width: 80vw;
   height: auto;
-  max-width: 100%;
+  max-width: 900px;
   max-height: 100vh;
 }
 #introText {
@@ -156,20 +156,26 @@ header img {
 }
 /* 2024 S/S 영상---------------------------------------- */
 #main2 {
-  margin: 10px 0px;
-  /* width: 100vw; */
-  /* background-color: #333; */
-  padding: 10px;
   box-sizing: border-box;
   text-align: center;
-  background-color: #ddd;
+  /* background-color: #ddd; */
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #main2 > h1 {
   font-size: 50px;
-  margin: 20px 0 20px 0;
+  padding: 70px 0px 50px 0px;
 }
-#main2 > video {
+#main2 > a > video {
+  max-width: 800px;
   width: 90vw;
+  margin: 20px 0px;
 }
-
+.main2-text {
+  padding: 5px;
+  width: 400px;
+  
+}
