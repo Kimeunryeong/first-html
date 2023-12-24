@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const hiddenText = document.getElementById("hidden-text");
-  const hiddenButton = document.getElementById("hidden-button");
+  const hiddenTexts = document.getElementsByClassName("hidden-text");
+  const hiddenButtons = document.getElementsByClassName("hidden-button");
 
-  hiddenButton.addEventListener("click", function () {
-    // hiddenText 요소의 display 속성을 토글
-    hiddenText.style.display =
-      hiddenText.style.display === "none" ? "block" : "none";
+  // hiddenButtons에 대해 이벤트 리스너 등록
+  for (let i = 0; i < hiddenButtons.length; i++) {
+    hiddenButtons[i].addEventListener("click", function () {
+      // 현재 클릭된 hiddenButton의 index를 통해 해당 hiddenText 찾기
+      const currentHiddenText = hiddenTexts[i];
 
-    // 버튼에 clicked 클래스 토글
-    hiddenButton.classList.toggle("clicked");
-  });
+      // hiddenText 요소의 display 속성을 토글
+      currentHiddenText.style.display =
+        currentHiddenText.style.display === "none" ? "block" : "none";
+
+      // 버튼에 clicked 클래스 토글
+      hiddenButtons[i].classList.toggle("clicked");
+    });
+  }
 });
 
 // 네브바 숨겼다 나타내기
@@ -51,3 +57,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('mainTitle').style.opacity = '1';
   }, 3000);
 });
+
