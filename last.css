@@ -1,8 +1,9 @@
 * {
   margin: 0px;
   padding: 0px;
-  color: white;
+  color: lightgray;
   box-sizing: border-box;
+  
 }
 body {
   background-color: black;
@@ -11,7 +12,9 @@ li {
   list-style: none;
 }
 h1 {
-  font-size: 50px;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
@@ -135,22 +138,21 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: auto;
 }
-
 .intro img {
   width: 80vw;
   height: auto;
-  max-width: 900px;
-  max-height: 100vh;
+  margin: 20px;
 }
 .text-box {
-  /* background-color: #bbb; */
-  max-width: 900px;
+  font-size: 1rem;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 .hidden-text {
   display: none;
@@ -171,23 +173,22 @@ header img {
 #main3,
 #main4,
 #main5 {
-  margin: 100px 0px;
+  margin: 150px 0px;
   width: 100vw;
   padding: 10px;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 95vh;
+  height: 100%;
 }
-
 #main2 > a > video {
   max-width: 800px;
   width: 90vw;
 }
 
-/* --------------main3 */
+/* --------------부띠끄 */
 #main3 img,
 #main3 video {
   max-width: 1200px;
@@ -196,14 +197,16 @@ header img {
   height: 85vh;
   cursor: pointer;
 }
-/* ----------------------main4 */
-#main4 p {
-  /* color: black; */
-  font-weight: bold;
-}
+/* ----------------------앰배서더 */
 #main4 .card, #main5 .card {
   border: 0 solid black;
   background-color: black;
+}
+#main4 img {
+  margin: 25px 0;
+}
+#main4 .card-text {
+  font-size: 1.5rem;
 }
 /* -----------main5 */
 #main5 {
