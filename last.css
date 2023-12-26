@@ -196,6 +196,7 @@ header img {
   max-height: 900px;
   height: 85vh;
   cursor: pointer;
+  margin: 20px 0;
 }
 /* ----------------------앰배서더 */
 #main4 .card, #main5 .card {
