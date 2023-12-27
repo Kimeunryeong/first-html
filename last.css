@@ -154,6 +154,10 @@ header img {
   align-items: center;
   margin: 10px;
 }
+.text-box > span {
+  font-weight: bold;
+  font-size: 1.15em;
+}
 .hidden-text {
   display: none;
 }
@@ -175,8 +179,6 @@ header img {
 #main5 {
   margin: 150px 0px;
   width: 100vw;
-  padding: 10px;
-  /*box-sizing: border-box;*/
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -188,26 +190,35 @@ header img {
   width: 90vw;
 }
 
-/* --------------부띠끄 */
-#main3 img,
-#main3 video {
-  max-width: 1200px;
-  width: 95vw;
+/* -------------- 프리뷰 */
+#main3 img {
+  width: 90vw;
   max-height: 900px;
-  height: 85vh;
-  cursor: pointer;
-  margin: 20px 0;
+  height: 85vh;  
 }
 /* ----------------------앰배서더 */
-#main4 .card, #main5 .card {
+#main4 .card{
   border: 0 solid black;
   background-color: black;
 }
 #main4 img {
-  margin: 25px 0;
+    width: 100%;
+    /* max-height: 900px; */
+    height: 60vh;  
 }
 #main4 .card-text {
   font-size: 1.5rem;
+}
+.more {
+  display: block;
+  width: 130px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
 }
 /* -----------main5 */
 #main5 {
@@ -240,8 +251,12 @@ header img {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  font-size: 1rem;
 }
-
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 /* -----------------footer */
 footer {
   background-color: #111;
